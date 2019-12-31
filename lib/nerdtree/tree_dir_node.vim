@@ -256,7 +256,7 @@ endfunction
 
 " FUNCTION: TreeDirNode.getDirChildren() {{{1
 " Return a list of all child nodes from "self.children" that are of type
-" TreeDirNode. This function supports http://github.com/scrooloose/nerdtree-project-plugin.git.
+" TreeDirNode. This function supports http://github.com/preservim/nerdtree-project-plugin.git.
 function! s:TreeDirNode.getDirChildren()
     return filter(copy(self.children), 'v:val.path.isDirectory == 1')
 endfunction
